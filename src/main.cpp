@@ -6,7 +6,7 @@
 // otherwise it runs the two original instructions and continues at 0xB22A1.
 // The stub must be able to *choose where execution continues*, which a Kyubu mid hook cannot do, so the original
 // jmp-stub is kept and installed through Kyubu's patch_bytes (conflicts are detected, unloading restores the bytes).
-#include "../../common.hpp"
+#include "../common.hpp"
 
 extern "C" {
 unsigned int invalid_JMP_back;
