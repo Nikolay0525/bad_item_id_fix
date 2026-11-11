@@ -1,0 +1,10 @@
+id = "bad_item_id_fix"
+name = "Bad Item ID Crash Fix"
+version = "1.0.0"
+kyubu = "^1.1"
+sides = ["client"]
+authors = ["coremaze (original), ported"]
+description = "Stops the game from crashing when an item with a bad id drops."
+
+[native]
+client = "bin/bad_item_id_fix.dll"
